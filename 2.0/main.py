@@ -20,9 +20,12 @@ def run_multiple_games_with_numpy(n):
 
     average_slot_winning = total_slot_winning / n
 
+    for key in hits:
+        hits[key] /= n
+
     return average_slot_winning, hits
 
-n = 10000000  # 根據需要設置 n 的值。
+n = 20000000  # 根據需要設置 n 的值。
 average_slot_winning, hits = run_multiple_games_with_numpy(n)
 print("平均 Slot 贏得金額：", average_slot_winning)
 print("中獎組合次數：", hits)

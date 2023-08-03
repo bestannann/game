@@ -100,7 +100,7 @@ def checkresult(bet_amount,slot_result,locked = None,type = "normal",free_game_c
 				
     #     else:
     #         player_amount = 0 #ex
-    #         base_free_game_max = per_free_game_max
+    #         base_free_game_max < free_game_max_value
     #         start_free_game(player_amount, free_game_count, base_free_game_max, free_game_total_winning=0, locked = None)
     # slot_result,locked = check_locked(slot_result,locked)    #step3 : 根據locked中的index將需要被固定住的column的符號全部替換成百搭 & 檢查有沒有新的column需要被固定，如果有則將column的index新增進locked中
     for i in range(len(slot_result[0])): #step4 : 找出所有符合中獎線圖的組合
@@ -141,8 +141,8 @@ def start_free_game(bet_amount, free_game_count, base_free_game_max, free_game_t
 test_case = [["M1", "M1", "M1", "M1"], 
             ["M1", "6", "11", "9"], 
             ["M1","7","11","10"], 
-            ["M1", "M1", "M1", "M1"], 
-            ["C1", "4", "11", "7"]]
+            ["C1", "M1", "M1", "M1"], 
+            ["4", "4", "11", "7"]]
 # win_list=['000']
 # bet_amount=1
 # print(calculate_winnings(win_list,1))

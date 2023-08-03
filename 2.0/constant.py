@@ -19,7 +19,7 @@ WW2 = ["M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1
 WW3 = ["M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1"]
 WW4 = ["M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1"]
 WW5 = ["M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1","M1"]
-test_roulette = Roulette(WW1,freeR2,freeR3,WW4,WW5)
+test_roulette = Roulette(WW1,freeR2,WW3,WW4,WW5)
 free_roulette = Roulette(freeR1,freeR2,freeR3,freeR4,freeR5)
 # print(free_roulette.roll_all())
 #賠率表
